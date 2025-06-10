@@ -50,7 +50,7 @@ func main() {
 	log.Println("gRPC server started")
 
 	// DONOT USE time.Sleep in production code, this is just for demonstration purposes
-	time.Sleep(2 * time.Second)
+	time.Sleep(1 * time.Second)
 
 	callGRPCService()
 }
