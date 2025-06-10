@@ -30,7 +30,12 @@ To generate the Go code from your .proto files and place them in the productServ
   cd go-microservice/productService
 ```
 
-2. Run the application:
+2. Run the application with Makefile:
+```bash
+  make run
+```
+- Or with go command
+
 ```bash
   go run main.go
 ```
