@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package productservice;
+
+import "product.proto";
+
+option go_package = "productService/productpb";
+
+message GetProductRequest {
+    int32 id = 1;
+}
+
+message GetProductResponse {
+    product.Product product = 1;
+}
+
+service Product {
+    rpc GetProduct(GetProductRequest) returns (GetProductResponse);
+}
